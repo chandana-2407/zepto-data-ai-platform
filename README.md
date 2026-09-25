@@ -224,26 +224,48 @@ The required graded baseline runs completely offline without an API key or netwo
 ## Project Structure
 
 ```text
-ZEPTO_DATA_AI_PLATFORM/
+ZEPT0_DATA_AI_PLATFORM/
 │
-├── docs/
-│   ├── doc_01.txt
-│   ├── doc_02.txt
-│   ├── doc_03.txt
-│   ├── doc_04.txt
-│   ├── doc_05.txt
-│   ├── doc_06.txt
-│   ├── doc_07.txt
-│   └── doc_08.txt
+├── analytics/
+│   ├── 01_eda.py
+│   ├── 02_cleaning.py
+│   ├── 03_eda_visualizations.py
+│   ├── 04_classification.py
+│   ├── 05_model_evaluation.py
+│   ├── 06_tuning.py
+│   ├── 07_regression.py
+│   ├── 08_final_pipeline.py
+│   ├── age_distribution.png
+│   ├── classification_results.csv
+│   ├── correlation_heatmap.png
+│   ├── roc_curves.png
+│   ├── survival_by_class.png
+│   ├── survival_by_gender.png
+│   ├── titanic.csv
+│   └── titanic_cleaned.csv
 │
-├── chroma_db/
+├── data_pipeline/
+│   ├── scrape_books.py
+│   └── books.db
 │
-├── ingest.py
-├── assistant.py
-├── prompt_template.py
-├── graph.py
-├── schemas.py
-├── app.py
-├── requirements.txt
-├── Dockerfile
-└── README.md
+├── support_assistant/
+│   ├── docs/
+│   │   ├── doc_01.txt
+│   │   ├── doc_02.txt
+│   │   ├── doc_03.txt
+│   │   ├── doc_04.txt
+│   │   ├── doc_05.txt
+│   │   ├── doc_06.txt
+│   │   ├── doc_07.txt
+│   │   └── doc_08.txt
+│   ├── app.py
+│   ├── assistant.py
+│   ├── graph.py
+│   ├── ingest.py
+│   ├── prompt_template.py
+│   ├── schemas.py
+│   ├── Dockerfile
+│   └── requirements.txt
+│
+├── README.md
+└── requirements.txt
